@@ -1,0 +1,26 @@
+.social-media-link-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw 2vw 7vw;
+}
+.social-media-link-box h3
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+.social-media-link-box span 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.social-media-link-box span .releases-icon
+{
+    width: 2vw;
+    height: 2vw;
+    color: teal;
+    margin-left: 2vw;
+}

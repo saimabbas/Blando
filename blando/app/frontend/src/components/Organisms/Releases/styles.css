@@ -1,0 +1,112 @@
+.releases-heading
+{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 3vw 0;
+    text-align: center;
+}
+
+.releases-con {
+  padding: 0 3.5vw;
+}
+.releases-con .col-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -ms-flex: 0 0 6%;
+  flex: 0 0 6%;
+  max-width: 6%;
+  padding: 0;
+}
+.releases-con .col-10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  -ms-flex: 0 0 88%;
+  flex: 0 0 88%;
+  max-width: 88%;
+}
+.releases-con .col-1 span {
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: teal;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.releases-con .col-1 span .releases-icon,
+.releases-con .col-1 span .releases-icon {
+  font-size: 1.5vw;
+  color: white;
+  cursor: pointer;
+}
+.releases-con .col-1 span:focus,
+.releases-con .col-1 span:focus {
+  outline: 0;
+  border: 0;
+}
+.releases-con .col-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1vw 2vw 1vw;
+  z-index: 1;
+}
+.releases-con .swiper-slide img 
+{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 0.5vw 0.5vw 0 0;
+}
+.swiper-releases
+{
+    width: 100%;
+    overflow: hidden;
+}
+.releases-con .swiper-slide span 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.releases-text-box
+{
+  border: 0.1vw solid teal;
+  border-top: 0 solid white;
+  position: relative;
+  border-radius: 0 0 0.5vw 0.5vw;
+  width: 100%;
+  z-index: 1;
+}
+.releases-con .swiper-slide span p 
+{
+    font-size: 1rem;
+    margin: 1vw 0 2vw 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.releases-con .swiper-slide span a 
+{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 100;
+    background-color: white;
+}
+.releases-con .swiper-slide span .releases-icon
+{
+    width: 3vw;
+    height: 3vw;
+    color: teal;
+    background-color: white;
+}

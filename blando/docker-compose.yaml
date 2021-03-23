@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  app:
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./app:/app
+    environment:
+      DJANGO_SETTINGS_MODULE: development
+

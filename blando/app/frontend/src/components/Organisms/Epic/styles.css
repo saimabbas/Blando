@@ -1,0 +1,6 @@
+.epic_image {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  min-width: 100%;
+}

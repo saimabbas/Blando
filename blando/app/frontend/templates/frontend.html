@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="{%static '/favicon.ico'%}" />
+	<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+		integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.0/swiper-bundle.css"
+		integrity="sha512-zamNaJKO5w/Mas6MRe/0y1k2iI0oBLkU/z4yXcXSuAiOEBYqahjU6uOWq3r5z491YZexyUbPOrQKMpaAS8PI+w=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+		integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
+		crossorigin="anonymous" />
+
+	<title>Blando</title>
+</head>
+
+<body>
+	<div id="app"></div>
+	<script src="{%static 'frontend/main.js'%}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+		integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.0/swiper-bundle.min.js"
+		integrity="sha512-VfcksjYXPZW36rsAGxeRGdB0Kp/htJF9jY5nlofHtRtswIB+scY9sbCJ5FdpdqceRRkpFfHZ3a9AHuoL4zjG5Q=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+		integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+		crossorigin="anonymous"></script>
+	<script>
+
+		/* $(document).ready(function () {
+			
+			$('.image-link').magnificPopup({ 
+				type: 'image'
+			 });
+
+			$(".video-link").magnificPopup({
+				disableOn: 700,
+				type: "iframe",
+				mainClass: "mfp-fade",
+				removalDelay: 160,
+				preloader: false,
+				fixedContentPos: false,
+				iframe: {
+					patterns: {
+						youtube: {
+							index: "youtube.com/",
+							id: function (url) {
+								var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+								if (!m || !m[1]) return null;
+								return m[1];
+							},
+							src: "https://www.youtube.com/embed/%id%?autoplay=1",
+						},
+					},
+				},
+			});
+		}); */
+
+
+		jQuery(document).ready(function ($) {
+
+			$('.gallery').magnificPopup(
+				{
+					delegate: 'a',
+					type: 'image',
+					tLoading: 'Loading image #%curr%...',
+					mainClass: 'mfp-img-mobile',
+					gallery: {
+						enabled: true,
+						navigateByImgClick: true,
+						preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+					},
+					image: {
+						tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+						titleSrc: function (item) {
+							return '';
+						}
+					}
+				}
+			);
+		});
+
+	</script>
+</body>
+
+</html>

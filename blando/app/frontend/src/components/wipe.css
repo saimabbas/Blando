@@ -1,0 +1,17 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: zelta-six !important;
+}
+
+a {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+a:hover,
+a:active {
+  text-decoration: none !important;
+}
